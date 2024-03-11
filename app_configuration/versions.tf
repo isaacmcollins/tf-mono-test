@@ -1,7 +1,7 @@
 
 # some foo
 terraform {
-  required_version = "~> 1.3.4"
+  required_version = "~> 1.7.4"
   required_providers {
     azurecaf = {
       source  = "aztfmod/azurecaf"
