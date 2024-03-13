@@ -5,11 +5,7 @@ module "azure_region" {
   azure_region = "eu-west"
 }
 
-moved {
-  from = azurecaf_name.app_configuration
-  to   = azurecaf_name.this
-}
-resource "azurecaf_name" "this" {
+  resource "azurecaf_name" "this" {
   count = local.create_app_configuration
   resource_types = [
     "azurerm_app_configuration"
